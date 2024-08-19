@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarBucks clone</title>
+    <link rel="icon" href="image/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="image/logo.png" alt="">
+        <ul>
+            <li>Home</li>
+            <li>Menu</li>
+            <li>What's new</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="main2">
+            <div>
+                <h1 class="title">it's just not Coffee it's <span class="highlight">Starbucks</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cupiditate debitis fugit placeat provident id doloribus nisi esse eum possimus. Autem veritatis, illum rerum ut velit inventore veniam expedita sunt.
+            Laudantium ducimus possimus omnis, nesciunt voluptatum beatae sapiente provident natus atque libero voluptas voluptatem error quibusdam eum! Doloremque veniam veritatis, officiis quia enim itaque quisquam, quo cupiditate tempore debitis assumenda!</p>
+            <button class="btn">Learn More</button>
+            </div>
+            <div class="circle">
+                <img class="img1" id="displayimg" src="image/cup1.png" alt="">
+            </div>
+        </div>
+        <div class="bottom">
+            <img src="image/cup1.png" alt="" onclick="changeElement(this)">
+            <img src="image/cup2.png" alt="" onclick="changeElement(this)">
+            <img src="image/cup3.png" alt="" onclick="changeElement(this)">
+        </div>
+    </div>
+    <script>
+        function changeElement(element){
+            var newSrc=element.src;
+            document.getElementById('displayimg').src=newSrc;
+        }
+    </script>
+</body>
+</html>
